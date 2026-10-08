@@ -66,7 +66,4 @@ Partial Public Class FrmBuses
         tmrEstados.Stop()
     End Sub
 
-    Public Sub viajar()
-
-    End Sub
 End Class
