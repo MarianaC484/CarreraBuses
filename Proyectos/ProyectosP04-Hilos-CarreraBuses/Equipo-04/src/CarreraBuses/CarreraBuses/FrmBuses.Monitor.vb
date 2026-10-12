@@ -33,7 +33,7 @@ Partial Class FrmBuses
                 lblEstadoActual.Text = hiloActual.ThreadState.ToString()
 
                 ' TRUCO AUTOMÁTICO: Si la barra llegó a 150 y nadie ha ganado, lo registramos
-                If barraActual IsNot Nothing AndAlso barraActual.Value = 150 Then
+                If barraActual IsNot Nothing AndAlso barraActual.Value = 100 Then
                     Dim nombreBus As String = $"Bus {i + 1}"
                     If String.IsNullOrEmpty(Ganador) Then
                         RegistrarGanador(nombreBus)
