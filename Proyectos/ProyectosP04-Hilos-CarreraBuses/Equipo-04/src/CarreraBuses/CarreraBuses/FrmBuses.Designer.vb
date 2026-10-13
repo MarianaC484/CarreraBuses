@@ -37,6 +37,9 @@ Partial Class FrmBuses
         btnIniciar = New Button()
         btnSalir = New Button()
         tmrEstados = New Timer(components)
+        lblRuta1 = New Label()
+        lblRuta2 = New Label()
+        lblRuta3 = New Label()
         SuspendLayout()
         ' 
         ' lblTitulo
@@ -177,11 +180,44 @@ Partial Class FrmBuses
         btnSalir.Text = "&Salir"
         btnSalir.UseVisualStyleBackColor = True
         ' 
+        ' lblRuta1
+        ' 
+        lblRuta1.AutoSize = True
+        lblRuta1.Font = New Font("Segoe UI", 8F)
+        lblRuta1.Location = New Point(90, 114)
+        lblRuta1.Name = "lblRuta1"
+        lblRuta1.Size = New Size(75, 21)
+        lblRuta1.TabIndex = 13
+        lblRuta1.Text = "Managua"
+        ' 
+        ' lblRuta2
+        ' 
+        lblRuta2.AutoSize = True
+        lblRuta2.Font = New Font("Segoe UI", 8F)
+        lblRuta2.Location = New Point(90, 179)
+        lblRuta2.Name = "lblRuta2"
+        lblRuta2.Size = New Size(75, 21)
+        lblRuta2.TabIndex = 14
+        lblRuta2.Text = "Managua"
+        ' 
+        ' lblRuta3
+        ' 
+        lblRuta3.AutoSize = True
+        lblRuta3.Font = New Font("Segoe UI", 8F)
+        lblRuta3.Location = New Point(90, 247)
+        lblRuta3.Name = "lblRuta3"
+        lblRuta3.Size = New Size(75, 21)
+        lblRuta3.TabIndex = 15
+        lblRuta3.Text = "Managua"
+        ' 
         ' FrmBuses
         ' 
         AutoScaleDimensions = New SizeF(11F, 28F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(880, 504)
+        Controls.Add(lblRuta3)
+        Controls.Add(lblRuta2)
+        Controls.Add(lblRuta1)
         Controls.Add(btnSalir)
         Controls.Add(btnIniciar)
         Controls.Add(lblEstado2)
@@ -219,5 +255,8 @@ Partial Class FrmBuses
     Friend WithEvents btnIniciar As Button
     Friend WithEvents btnSalir As Button
     Friend WithEvents tmrEstados As Timer
+    Friend WithEvents lblRuta1 As Label
+    Friend WithEvents lblRuta2 As Label
+    Friend WithEvents lblRuta3 As Label
 
 End Class
